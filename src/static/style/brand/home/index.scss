@@ -1,0 +1,20 @@
+body {
+    .target {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    .bg {
+        width: 100px;
+        height: 100px;
+        background: url(../../../img/brand/home/bg.png) 0 0 no-repeat;
+        background-size: contain;
+    }
+    .tooltip {
+        width: 100px;
+        height: 100px;
+        background: url(../../../img/brand/home/tooltip-blue.svg) 0 0 no-repeat;
+        background-size: contain;
+    }
+}

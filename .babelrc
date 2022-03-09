@@ -1,0 +1,18 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "useBuiltIns": "usage",
+            "corejs": {
+                // 指定采用最新版本的core-js
+                "version": "3.20",
+                // 支持采用proposals特性
+                "proposals": true
+            }
+        }],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        // 将帮助函数从每个文件中提取出来
+        "@babel/plugin-transform-runtime"
+    ]
+}

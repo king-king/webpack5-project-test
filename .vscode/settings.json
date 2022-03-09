@@ -1,0 +1,18 @@
+{
+    "beautify.config": {
+        "newline_between_rules": false,
+        "selector_separator_newline": false
+    },
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "files.eol": "\n",
+    "javascript.validate.enable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "files.autoSave": "off",
+    "files.trimTrailingWhitespace": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
