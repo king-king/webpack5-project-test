@@ -9,7 +9,7 @@ const { app, flag } = require('./config/config');
 const config = require('./webpack.config');
 
 const port = 8000 + Math.floor(Math.random() * 100);
-const host = 'local.brand.jd.com';
+const host = 'local.test.com';
 const base = {
     secure: true,
     changeOrigin: true
@@ -34,14 +34,6 @@ module.exports = merge(config, {
                 ...base,
                 target: `http://${host}:${port}/`,
                 pathRewrite: path => path.replace(`/${flag}/brand/view`, `/${flag}/brand/views`)
-            },
-            '/brand/common/**': {
-                ...base,
-                target: 'http://bpp-api.jd.com/bppapi/brand/'
-            },
-            '/brand/industry/**': {
-                ...base,
-                target: 'http://bpp-api.jd.com/bppapi/brand/'
             }
         }
     }
