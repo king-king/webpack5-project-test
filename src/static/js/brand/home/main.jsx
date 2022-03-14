@@ -19,7 +19,7 @@ const chart = new Chart({
 chart.data(data);
 
 // Step 3: 创建图形语法，绘制柱状图
-chart.interval().position('genre*sold');
+chart.line().position('genre*sold');
 
 // Step 4: 渲染图表
 chart.render();

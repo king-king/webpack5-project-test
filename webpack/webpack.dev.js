@@ -15,14 +15,14 @@ const base = {
     changeOrigin: true
 };
 module.exports = merge(config, {
-    // plugins: [new webpack.HotModuleReplacementPlugin()],
+    plugins: [new webpack.HotModuleReplacementPlugin()],
     devServer: {
         compress: true,
         historyApiFallback: false,
         port,
         host,
-        hot: false,
-        webSocketServer: false,
+        // hot: false,
+        // webSocketServer: false,
         open: {
             target: `${flag}/brand/view/brand/home.html`,
             app: {
